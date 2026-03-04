@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox and task css</title>
+
+    <style>
+        .container{
+            display: flex;
+            margin: 20px;
+            border: 2px solid black;
+        }
+
+        .box{
+            background-color: plum;
+            border: 2px solid palevioletred;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h3>1. Row Direction</h3>
+<div class="container" style="flex-direction: row;">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+</div>
+
+<h3>2. Column Direction</h3>
+<div class="container" style="flex-direction: column;">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+</div>
+
+<h3>3. Flex Wrap</h3>
+<div class="container" style="flex-wrap: wrap;">
+    <div class="box" style="width:150px;">1</div>
+    <div class="box" style="width:150px;">2</div>
+    <div class="box" style="width:150px;">3</div>
+    <div class="box" style="width:150px;">4</div>
+    <div class="box" style="width:150px;">5</div>
+    <div class="box" style="width:150px;">6</div>
+</div>
+
+
+<h3> Center Horizontally</h3>
+<div class="container" style="justify-content: center;">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+</div>
+
+<h3> Space Between</h3>
+<div class="container" style="justify-content: space-between;">
+    <div class="box">X</div>
+    <div class="box">Y</div>
+    <div class="box">Z</div>
+</div>
+<h3> Align Items Center</h3>
+<div class="container" style="height:200px; align-items: center;">
+    <div class="box" style="height:50px;">Small</div>
+    <div class="box" style="height:100px;">Medium</div>
+    <div class="box" style="height:150px;">Large</div>
+</div>
+
+
+<h3> Visibility Hidden</h3>
+<button style="visibility:hidden;">Hidden Button</button>
+<p>Button space is still occupied.</p>
+<h3>8. Inline Styled Div</h3>
+<div style="background-color: green; color: brown; padding: 20px; width: 200px;">
+    Inline Styled Div
+</div>
+<h3> Span as Block</h3>
+<span style="display:block; background-color:goldenrod; margin:5px;">
+    First Span
+</span>
+<span style="display:block; background-color:greenyellow; margin:5px;">
+    Second Span
+</span>
+
+</body>
+</html>
